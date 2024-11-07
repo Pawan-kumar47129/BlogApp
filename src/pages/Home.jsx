@@ -18,7 +18,7 @@ const Home = () => {
     return (
       <div className="flex py-8 mt-4 text-center ">
         <Container>
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap gap-2">
             <div className="p-2 w-full ">
               <h1 className="text-2xl font-bold hover:text-gray-500">
                 Login to read Posts
@@ -35,11 +35,11 @@ const Home = () => {
       <div className="w-full py-8">
         <Container>
           {posts.length >= 1 ? (
-            <div className="flex flex-wrap justify-center items-center">
+            <div className="flex flex-wrap justify-center items-center gap-2">
               {posts.map((post) => (
                 <div
                   key={post.$id}
-                  className="sm:p-2 min-w-[15rem] max-w-[25rem]"
+                  className="p-2 min-w-[15rem] max-w-[25rem] w-full h-[25rem]"
                 >
                   <PostCard post={post} />
                 </div>

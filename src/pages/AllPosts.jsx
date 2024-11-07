@@ -21,7 +21,7 @@ const AllPosts = () => {
             <div key={post.$id} className="p-2 min-w-[15rem] max-w-[25rem] w-full h-[25rem]">
               <PostCard post={post} />
             </div>
-          )):<h2>No Post Available</h2>}
+          )):<h2 className="text-xl text-blue-600">No Post Available</h2>}
         </div>
       </Container>
     </div>

@@ -12,10 +12,7 @@ export default function Post() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
   const userData = useSelector((state) => state.auth.userData);
-    console.log(post?.$id);
-    console.log(userData?.userId);
   const isAuthor = post && userData ? post.userId === userData.$id : false;
-
   useEffect(() => {
     if ($id) {
       appwriteService

@@ -125,7 +125,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <p className="text-xl text-center text-gray-600 mt-2">
+      <p className="text-lg text-center text-black font-medium mt-2">
         &copy; Copyright 2024. All Rights Reserved by BlogApp.
       </p>
     </section>
